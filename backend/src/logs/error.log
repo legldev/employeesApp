@@ -1,0 +1,14 @@
+error: Connection error {"info":"options usecreateindex, usefindandmodify are not supported","service":"itx-backend","timestamp":"2021-12-30T03:00:50.385Z"}
+error: DYING GRACEFULLY | REASON: unknownError | ERROR: {} {"service":"itx-backend","timestamp":"2021-12-31T04:07:40.354Z"}
+error: DYING GRACEFULLY | REASON: unknownError | ERROR: {} {"service":"itx-backend","timestamp":"2021-12-31T04:09:01.294Z"}
+error: DYING GRACEFULLY | REASON: unknownError | ERROR: {} {"service":"itx-backend","timestamp":"2021-12-31T04:09:39.593Z"}
+error: DYING GRACEFULLY | REASON: unknownError | ERROR: {} {"service":"itx-backend","timestamp":"2021-12-31T04:11:36.948Z"}
+error: DYING GRACEFULLY | REASON: unknownError | ERROR: {} {"service":"itx-backend","timestamp":"2021-12-31T04:12:21.696Z"}
+error: DYING GRACEFULLY | REASON: unknownError | ERROR: {} {"service":"itx-backend","timestamp":"2021-12-31T04:13:02.755Z"}
+error: DYING GRACEFULLY | REASON: unknownError | ERROR: {} {"service":"itx-backend","timestamp":"2021-12-31T04:20:10.614Z"}
+error: DYING GRACEFULLY | REASON: unknownError | ERROR: {} {"service":"itx-backend","timestamp":"2021-12-31T04:21:23.970Z"}
+error: DYING GRACEFULLY | REASON: unknownError | ERROR: {} {"service":"itx-backend","timestamp":"2021-12-31T04:23:03.147Z"}
+error: DYING GRACEFULLY | REASON: unknownError | ERROR: {} {"service":"itx-backend","timestamp":"2022-01-02T04:16:03.324Z"}
+error: DYING GRACEFULLY | REASON: unknownError | ERROR: {} {"service":"itx-backend","timestamp":"2022-01-02T04:18:32.592Z"}
+error: DYING GRACEFULLY | REASON: unknownError | ERROR: {} {"service":"itx-backend","timestamp":"2022-01-04T14:23:32.238Z"}
+error: DYING GRACEFULLY | REASON: unknownError | ERROR: {} {"service":"itx-backend","timestamp":"2022-01-04T14:24:12.755Z"}

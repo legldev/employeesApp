@@ -1,0 +1,61 @@
+<div class="container">
+  <form>
+    <div class="form-group">
+      <h1 class="text-center text-primary">Employees App</h1>
+      <div class="input-group-prepend"> 
+        <input type="text" [(ngModel)]="employeeDetails.name" class="form-control" placeholder="Name" name="name">
+        <input type="number" [(ngModel)]="employeeDetails.salary" class="form-control" placeholder="Salary" name="salary">
+
+        <select name="deparmentSelect" [(ngModel)]="employeeDetails.department" (change)="selectChange()" class="select-form">
+          <option [value]="item.id" *ngFor="let item of dataSource">
+              {{item.name}}
+          </option>
+      </select>
+        <button (click)="add()">Add new</button></div>
+    </div>
+  </form>
+
+  <h1 class="h1">Employees List</h1>
+  <div class="container">
+
+    <!-- Show it when there is no employee -->
+    <div class="no-data text-center" *ngIf="employeesData.length == 0">
+      <p>There is no employee added yet!</p>
+    </div>
+  
+    <!-- Employees list table, it hides when there is no employee -->
+    <div *ngIf="employeesData.length !== 0">
+  
+      <div class="col-md-12">
+        <table class="table table-bordered">
+          <thead>
+            <tr>
+              <th scope="col">Name</th>
+              <th scope="col">Salary</th>
+              <th scope="col">Deparment</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr *ngFor="let employee of employeesData">
+              <td>{{employee.name}}</td>
+              <td>{{employee.salary}}</td>
+              <td>{{employee.department}}</td>
+            </tr>
+            <tr>
+              <td>
+                <p>Current Page: {{employeesPagination.page}} </p>
+                <p>Total Pages: {{employeesPagination.totalPages}}</p>
+                <button *ngIf="employeesPagination.prevPage !== null" (click)="prevPage()">Prev Page</button>
+                <button *ngIf="employeesPagination.nextPage !== null" (click)="nextPage()">Next Page</button>
+                
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+  
+    </div>
+  
+  </div>
+
+</div>
